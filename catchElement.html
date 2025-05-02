@@ -5,17 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Element Catching</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <div class="all-h1">
-        <h1 id="title-one">Okay One</h1>
-        <h1>Okay Two</h1>
-        <h1>Okay Three</h1>
-        <h1>Okay Four</h1>
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label font-bold text-black">Product Name</label>
+                        <input id="product-name-input" type="product-name" class="input" placeholder="Product Name" />
+                        <label class="label font-bold text-black">Product Link</label>
+                        <input id="product-link-id" type="password" class="input" placeholder="Product Link" />
+                        <label id="product-price-id" class="label font-bold text-black">Product Price</label>
+                        <input type="password" class="input" placeholder="Product Price" />
+                        <button id="add-product-btn" class="btn btn-neutral mt-4">Add Product</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <button id="login-btn">Log In</button>
     <script src="catchElement.js"></script>
 </body>
 
